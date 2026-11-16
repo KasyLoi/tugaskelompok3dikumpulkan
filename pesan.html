@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pesan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="con">
+
+        <div class="gimik">
+            <p>pizza 100% halal. berkualitas tinggi. lezat!</p>
+        </div>
+
+        <div class="header">
+            <div class="logo">
+                <h1>pizza</h1>
+            </div>
+            <div class="nav">
+                <a href="index.html">home</a>
+                <a href="menu.html">menu</a>
+                <a href="pesan.html">pesan</a>
+            </div>
+        </div>
+
+        <div class="con-empat">
+            <form class="form-pesan" action="#" method="post">
+                <h2>Pesan Pizza</h2>
+
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="telepon">Nomor telepon</label>
+                <input type="tel" id="telepon" name="telepon" required>
+
+                <label for="alamat">Alamat pengantaran</label>
+                <textarea id="alamat" name="alamat" rows="3" required></textarea>
+
+                <label for="pizza">Pilih pizza</label>
+                <select id="pizza" name="pizza" required>
+                    <option value="">Pilih menu</option>
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="jamur">Jamur</option>
+                    <option value="hawai">Hawai</option>
+                    <option value="daging">Daging</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="sosis">Sosis</option>
+                    <option value="ayam-bbq">Ayam BBQ</option>
+                    <option value="mediteranian">Mediteranian</option>
+                </select>
+
+                <label for="ukuran">Ukuran pizza</label>
+                <select id="ukuran" name="ukuran" required>
+                    <option value="">Pilih ukuran</option>
+                    <option value="small">Small - Rp30.000</option>
+                    <option value="medium">Medium - Rp50.000</option>
+                    <option value="large">Large - Rp70.000</option>
+                </select>
+
+                <label for="jumlah">Jumlah</label>
+                <input type="number" id="jumlah" name="jumlah" min="1" value="1" required>
+
+                <span>*opsional</span>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+
+                <button type="submit">Kirim Pesanan</button>
+            </form>
+        </div>
+
+        <div class="footer">
+            <p>web dummy untuk tugas kuliah</p>
+            <p>&copy; 2024 My Website. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
